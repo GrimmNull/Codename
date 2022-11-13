@@ -1,0 +1,13 @@
+.wrapper {
+
+  .boardRow {
+    height: 150px;
+
+    .boardCell {
+      border: 1px solid mediumpurple;
+      cursor: pointer;
+      position: relative;
+      outline-offset: -225px;
+    }
+  }
+}

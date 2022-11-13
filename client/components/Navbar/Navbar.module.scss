@@ -1,0 +1,44 @@
+@import "../../styles/constants";
+
+.wrapper {
+  width: 100vw;
+  height: $navbar-height;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(85, 9, 121, 1) 35%, rgba(50, 0, 78, 1) 87%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .username {
+    margin-left: 30px;
+
+    & > span {
+      font-size: $gigantic-font;
+    }
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .serverInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+
+    .roomName {
+      font-size: $gigantic-font;
+    }
+
+    .roomId {
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:active {
+        color: $color-text-disabled;
+      }
+    }
+  }
+}

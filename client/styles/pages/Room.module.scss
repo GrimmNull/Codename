@@ -1,0 +1,9 @@
+@import "../../styles/constants";
+
+.wrapper {
+  width: calc(100vw - $team-display-desktop-width);
+  height: calc(100vh - $navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
